@@ -5,7 +5,8 @@
     --gray-light:#393E44;
     --gray:#212428;
     --gray-dark:#1E1E1E;
-    --blue-light:#A8B6C7;
+    --gray-blue:#A8B6C7;
+    --blue-light:rgba(182, 193, 238, 0.3);
     --blue:#4A6AF8;
     --blue-dark:#4961CE;
     --white:#FDFDFD;
@@ -21,18 +22,27 @@ html{
     padding: 0;
 }
 body{
-    min-height: 100vh;
     background: linear-gradient(var(--blue-dark),var(--gray));
     font-family: 'Lexend Deca', sans-serif;
-    padding: 0 3rem;
-    color: var(--blue-light);
+    color: var(--gray-blue);
+    height: 100%;
 }
 h1,h2,h3{
     font-family: 'Bungee', cursive;
 }
 h1{
     color: var(--white-light);
+    line-height: 3rem;
+}
+h2,h3{
+    color: var(--primary);
 }
 a{
     text-decoration: none;
+}
+header,
+main{
+    width: 90%;
+    max-width: 70rem;
+    margin: 0 auto;
 }

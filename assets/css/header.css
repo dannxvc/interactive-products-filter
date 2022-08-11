@@ -1,5 +1,25 @@
+#header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+}
 .title-keyword{
     color: var(--primary);
+}
+.header-description{
+    display: grid;
+    gap: 2rem;
+}
+.header-nombre{
+    color: var(--primary);
+}
+.header-wpp-btn,
+.header-img{
+    border-radius: 1rem;
 }
 .header-wpp-btn{
     padding: 0.4rem .9rem;
@@ -8,10 +28,27 @@
     align-items: center;
     gap: 1rem;
     border: var(--primary-light) 0.15rem solid;
-    border-radius: 1rem;
     width: 12rem;
+}
+.header-wpp-btn:hover{
+    background:var(--blue-light);
 }
 .header-wpp-icon{
     width: 2rem;
     --icon:var(--primary-light);
+}
+.header-img{
+    width: 25rem;
+}
+.header-img-container::before{
+    content: ".";
+    position: absolute;
+    top:45%;
+    left: 50%;
+    width: 100rem;
+    height: 16rem;
+    border-radius: 1rem;
+    border: var(--primary-light) 0.15rem solid;
+    color:transparent;
+    z-index: -1;
 }
