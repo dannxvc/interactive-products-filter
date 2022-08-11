@@ -27,7 +27,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    border: var(--primary-light) 0.15rem solid;
+    border: var(--primary-light) 0.05rem solid;
     width: 12rem;
 }
 .header-wpp-btn:hover{
@@ -48,7 +48,7 @@
     width: 100rem;
     height: 16rem;
     border-radius: 1rem;
-    border: var(--primary-light) 0.15rem solid;
+    border: var(--primary-light) 0.05rem solid;
     color:transparent;
     z-index: -1;
 }

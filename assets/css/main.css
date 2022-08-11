@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lexend+Deca:wght@300;600&display=swap');
 :root{
-    --primary:#25C9D3;
+    --primary:#e06e52;
     --primary-light:#7BF0F8;
+    --primary-dark:#368f96;
     --gray-light:#393E44;
-    --gray:#212428;
-    --gray-dark:#1E1E1E;
+    --gray:#12151f;
     --gray-blue:#A8B6C7;
     --blue-light:rgba(182, 193, 238, 0.3);
-    --blue:#4A6AF8;
-    --blue-dark:#4961CE;
     --white:#FDFDFD;
     --white-light:#FFFFFF;
     --icon:var(--primary);
@@ -22,17 +20,30 @@ html{
     padding: 0;
 }
 body{
-    background: linear-gradient(var(--blue-dark),var(--gray));
+    /* background: linear-gradient(var(--blue-dark) 0%,40%,var(--gray)100%); */
+    background: var(--gray);
     font-family: 'Lexend Deca', sans-serif;
     color: var(--gray-blue);
     height: 100%;
+    font-size: 16px;
+}
+p,button,input{
+    font-size: 1rem;
 }
 h1,h2,h3{
-    font-family: 'Bungee', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: 1rem;
 }
 h1{
     color: var(--white-light);
     line-height: 3rem;
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
 }
 h2,h3{
     color: var(--primary);
@@ -45,4 +56,7 @@ main{
     width: 90%;
     max-width: 70rem;
     margin: 0 auto;
+}
+ul{
+    list-style: none;
 }

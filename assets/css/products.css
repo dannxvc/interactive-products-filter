@@ -10,11 +10,10 @@
     border-radius: 1rem;
 }
 .products-input{
-    border: var(--primary-light) 0.15rem solid;
+    border: var(--primary-light) 0.05rem solid;
     background: transparent;
-    padding: .5rem;
-    width: 90%;
-    max-width: 20rem;
+    padding: 1rem;
+    width: 100%;
     margin: 1.6rem 0;
 }
 .products-input::placeholder{
@@ -28,7 +27,7 @@
     max-width: 20rem;
 }
 .products-btns{
-    border: var(--white-light) 0.15rem solid;
+    border: var(--white-light) 0.05rem solid;
     background:transparent ;
     padding: 1rem;
     width: 14rem;
@@ -45,12 +44,12 @@
 .products-container{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
-    padding: 6rem 0;
+    padding: 6rem 0 15rem 0;
 }
 .product-card{
     overflow: hidden;
     grid-template-rows: 1fr auto;
-    border: var(--white-light) 0.15rem solid;
+    border: var(--white-light) 0.05rem solid;
     text-align: center;
 }
 .products-img{
