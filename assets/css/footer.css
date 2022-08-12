@@ -1,10 +1,9 @@
 #footer{
     display: grid;
-    background: var(--primary-dark);
+    background: var(--gray);
     color: var(--gray);
-    padding:1rem 25rem;
     color: var(--white);
-
+    padding: 1rem 0 0 0;
 }
 .footer-socials{
     display: flex;
@@ -17,11 +16,17 @@
 }
 .footer-icons,
 .footer-description{
+    width: 90%;
+    max-width: 70rem;
+    margin: 0 auto;
     padding: 2rem 0;
     --icon:var(--white);
 }
+.footer-description{
+    width: 100%;
+}
 .footer-icon:hover{
-    --icon:var(--gray);
+    --icon:var(--primary);
 }
 .footer-icon{
     width: 2rem;
@@ -31,9 +36,16 @@
     width: 15rem;
 }
 .footer-attribution{
-    color: var(--gray);
     text-align: center;
+    background: var(--primary);
+    padding: 1rem 0;
 }
 .footer-attribution p{
+    color: var(--gray);
     font-size: .8rem;
+}
+.footer-attribution a,
+.footer-owner{
+    color: var(--gray);
+    font-weight: 600;
 }

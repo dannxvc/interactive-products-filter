@@ -23,19 +23,26 @@
 }
 .header-wpp-btn{
     padding: 0.4rem .9rem;
-    color: var(--primary-light);
+    color: var(--white);
     display: flex;
     align-items: center;
     gap: 1rem;
     border: var(--primary-light) 0.05rem solid;
+    background: var(--primary-light);
     width: 12rem;
 }
 .header-wpp-btn:hover{
-    background:var(--blue-light);
+    background:var(--gray);
+    color:var(--primary-light);
+}
+.header-wpp-btn:hover .header-wpp-icon{
+    --icon:var(--primary-light);
+
 }
 .header-wpp-icon{
     width: 2rem;
-    --icon:var(--primary-light);
+    --icon:var(--white);
+    color: var(--primary-light);
 }
 .header-img{
     width: 25rem;

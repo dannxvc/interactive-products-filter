@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lexend+Deca:wght@300;600&display=swap');
 :root{
-    --primary:#e06e52;
-    --primary-light:#7BF0F8;
-    --primary-dark:#368f96;
-    --gray-light:#393E44;
-    --gray:#12151f;
+    --primary:#f37149;
+    --primary-light:#5368df;
+    --gray-light:#1f2027;
+    --gray:#17181d;
+    /* --gray:#050b1f; */
     --gray-blue:#A8B6C7;
-    --blue-light:rgba(182, 193, 238, 0.3);
-    --white:#FDFDFD;
-    --white-light:#FFFFFF;
+    --blue-light:#d8dcf1;
+    --white:#f1f1fa;
+    --white-light:#fdfdfd;
     --icon:var(--primary);
+    --orange-light:#5368df;
+
 }
 html{
     box-sizing: border-box;
@@ -26,6 +28,7 @@ body{
     color: var(--gray-blue);
     height: 100%;
     font-size: 16px;
+    position: relative;
 }
 p,button,input{
     font-size: 1rem;
@@ -37,22 +40,22 @@ h1,h2,h3{
 h1{
     color: var(--white-light);
     line-height: 3rem;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 h2{
-    font-size: 2rem;
+    color: var(--gray);
+    font-size: 2.2rem;
 }
 h3{
     font-size: 1.5rem;
 }
-h2,h3{
+h3{
     color: var(--primary);
 }
 a{
     text-decoration: none;
 }
-header,
-main{
+header{
     width: 90%;
     max-width: 70rem;
     margin: 0 auto;

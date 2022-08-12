@@ -1,19 +1,32 @@
+#products{
+    text-align: center;
+    /* background: linear-gradient(var(--white),var(--primary-light)); */
+    background: var(--white);
+    padding: 6rem 0 0 0;
+    min-height: 100vh;
+}
+.products-input,
+.products-container,
+.products-types{
+    width: 90%;
+    max-width: 70rem;
+    margin: 0 auto;
+}
 .products-input,
 .products-btns{
     font-family: 'Lexend Deca', sans-serif;
-    color: var(--white);
 }
-
 .product-card,
 .products-input,
 .products-btns{
     border-radius: 1rem;
 }
 .products-input{
-    border: var(--primary-light) 0.05rem solid;
-    background: transparent;
+    border: var(--gray) 0.05rem solid;
+    background: var(--gray);
     padding: 1rem;
     width: 100%;
+    color: var(--white);
     margin: 1.6rem 0;
 }
 .products-input::placeholder{
@@ -21,21 +34,23 @@
 }
 .products-types{
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
     gap: 1rem;
     width: 100%;
-    max-width: 20rem;
 }
 .products-btns{
-    border: var(--white-light) 0.05rem solid;
-    background:transparent ;
+    border: var(--primary-light) 0.05rem solid;
+    background:transparent;
     padding: 1rem;
-    width: 14rem;
-    font-weight: 600;
+    width: 100%;
     cursor: pointer;
+    color: var(--primary-light);
 }
 .products-btns:hover{
-    background:var(--blue-light);
+    color: var(--white);
+    background:var(--primary-light);
+    border: var(--white) 0.05rem solid;
 }
 .products-container,
 .product-card{
@@ -44,17 +59,45 @@
 .products-container{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
-    padding: 6rem 0 15rem 0;
+    padding: 6rem 0 8rem 0;
 }
 .product-card{
     overflow: hidden;
+    box-shadow: 6px 10px 10px -10px rgba(0, 0, 0, 0.55);
     grid-template-rows: 1fr auto;
-    border: var(--white-light) 0.05rem solid;
     text-align: center;
+}
+.product-card figcaption p{
+    font-weight: 600;
+    color: var(--primary-light);
+    margin-bottom: 0.5rem;
+}
+.product-card figcaption span{
+    color: var(--gray-blue);
+    font-weight: 500;
+    font-size: .9rem;
+}
+.product-img-container{
+    height: 14rem;
+    overflow: hidden;
 }
 .products-img{
     width: 100%;
 }
 .product-description{
     padding: 3rem;
+}
+.product-modal{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.products-empty{
+    color: var(--primary);
+    margin: 0 auto;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 1.5rem;
 }
