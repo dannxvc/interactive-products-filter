@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lexend+Deca:wght@300;600&display=swap');
 :root{
-    --primary:#f37149;
+    --primary:#fd9f52;
     --primary-light:#5368df;
     --gray-light:#1f2027;
-    --gray:#17181d;
+    --gray:#070a0e;
     /* --gray:#050b1f; */
     --gray-blue:#A8B6C7;
     --blue-light:#d8dcf1;
-    --white:#f1f1fa;
+    --white:#faf6f1;
     --white-light:#fdfdfd;
     --icon:var(--primary);
-    --orange-light:#5368df;
 
 }
 html{
@@ -22,7 +21,6 @@ html{
     padding: 0;
 }
 body{
-    /* background: linear-gradient(var(--blue-dark) 0%,40%,var(--gray)100%); */
     background: var(--gray);
     font-family: 'Lexend Deca', sans-serif;
     color: var(--gray-blue);
@@ -54,11 +52,6 @@ h3{
 }
 a{
     text-decoration: none;
-}
-header{
-    width: 90%;
-    max-width: 70rem;
-    margin: 0 auto;
 }
 ul{
     list-style: none;

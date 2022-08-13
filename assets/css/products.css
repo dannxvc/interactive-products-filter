@@ -1,9 +1,9 @@
 #products{
     text-align: center;
-    /* background: linear-gradient(var(--white),var(--primary-light)); */
     background: var(--white);
-    padding: 6rem 0 0 0;
+    padding: 8rem 0;
     min-height: 100vh;
+    position: relative;
 }
 .products-input,
 .products-container,
@@ -19,13 +19,12 @@
 .product-card,
 .products-input,
 .products-btns{
-    border-radius: 1rem;
+    border-radius: .5rem;
 }
 .products-input{
     border: var(--gray) 0.05rem solid;
     background: var(--gray);
     padding: 1rem;
-    width: 100%;
     color: var(--white);
     margin: 1.6rem 0;
 }
@@ -34,42 +33,43 @@
 }
 .products-types{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
     gap: 1rem;
-    width: 100%;
 }
 .products-btns{
-    border: var(--primary-light) 0.05rem solid;
-    background:transparent;
+    border: var(--white) 0.15rem solid;
+    background:var(--primary);
     padding: 1rem;
     width: 100%;
     cursor: pointer;
-    color: var(--primary-light);
+    color: var(--white);
 }
 .products-btns:hover{
-    color: var(--white);
-    background:var(--primary-light);
-    border: var(--white) 0.05rem solid;
+    color: var(--primary);
+    background:transparent;
+    border: var(--primary) 0.15rem solid;
 }
 .products-container,
 .product-card{
     display: grid;
 }
 .products-container{
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
-    padding: 6rem 0 8rem 0;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 0 8rem 0;
 }
 .product-card{
     overflow: hidden;
     box-shadow: 6px 10px 10px -10px rgba(0, 0, 0, 0.55);
     grid-template-rows: 1fr auto;
     text-align: center;
+    padding: 1rem;
+    background: var(--gray);
 }
 .product-card figcaption p{
     font-weight: 600;
-    color: var(--primary-light);
+    color: var(--primary);
     margin-bottom: 0.5rem;
 }
 .product-card figcaption span{
@@ -83,6 +83,7 @@
 }
 .products-img{
     width: 100%;
+    border-radius: .2rem;
 }
 .product-description{
     padding: 3rem;
@@ -100,4 +101,26 @@
     grid-column-start: 1;
     grid-column-end: 5;
     font-size: 1.5rem;
+}
+.footer-wave{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+@media only screen and (min-width:40rem){
+    .products-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        padding: 6rem 0 8rem 0;
+    }
+    .products-types{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+}
+@media only screen and (min-width:67rem){
+    .products-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1rem auto;
+    }
 }

@@ -1,9 +1,9 @@
 #footer{
     display: grid;
-    background: var(--gray);
+    background: var(--primary);
     color: var(--gray);
-    color: var(--white);
     padding: 1rem 0 0 0;
+    position: relative;
 }
 .footer-socials{
     display: flex;
@@ -11,7 +11,7 @@
     justify-content: space-between;
 }
 .logo{
-    color: var(--white);
+    color: var(--gray);
     padding: 0;
 }
 .footer-icons,
@@ -20,13 +20,13 @@
     max-width: 70rem;
     margin: 0 auto;
     padding: 2rem 0;
-    --icon:var(--white);
+    --icon:var(--gray);
 }
 .footer-description{
     width: 100%;
 }
 .footer-icon:hover{
-    --icon:var(--primary);
+    --icon:var(--white);
 }
 .footer-icon{
     width: 2rem;
@@ -37,15 +37,19 @@
 }
 .footer-attribution{
     text-align: center;
-    background: var(--primary);
-    padding: 1rem 0;
+    background: var(--gray);
+    padding: 2rem 1rem;
 }
 .footer-attribution p{
-    color: var(--gray);
+    color: var(--white);
     font-size: .8rem;
 }
 .footer-attribution a,
 .footer-owner{
-    color: var(--gray);
+    color: var(--white);
     font-weight: 600;
+}
+hr{
+    background: var(--gray);
+    border: .05rem solid var(--gray);
 }
