@@ -80,6 +80,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 0;
         height: auto;
+        background: transparent;
         text-align: center;   
     }
     .navbar-link{
