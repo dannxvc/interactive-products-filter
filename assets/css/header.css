@@ -4,9 +4,10 @@
 .header-container{
     display: grid;
     grid-template-columns: 1fr;
-    height: 100vh;
+    height: 70vh;
     gap: 3rem;
     align-items: center;
+    text-align: center;
     overflow: hidden;
     width: 90%;
     max-width: 70rem;
@@ -19,6 +20,7 @@
 .header-description{
     display: grid;
     gap: 2rem;    
+    justify-items: center;
 }
 .header-img-container{
     display: none;
@@ -63,12 +65,17 @@
     width: 100%;
     z-index: -1;
 }
-
 @media only screen and (min-width:67rem){
     .header-container{
         grid-template-columns: 1fr 1fr;
+        height: 100vh;
+        text-align: left;
+        justify-items: left;
     }
     .header-img-container{
         display: block;
+    }
+    .header-description{
+        justify-items: left;
     }
 }

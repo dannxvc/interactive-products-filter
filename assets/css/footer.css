@@ -1,7 +1,7 @@
 #footer{
     display: grid;
     background: var(--primary);
-    color: var(--gray);
+    color: var(--white);
     padding: 1rem 0 0 0;
     position: relative;
 }
@@ -11,7 +11,7 @@
     justify-content: space-between;
 }
 .logo{
-    color: var(--gray);
+    color: var(--white);
     padding: 0;
 }
 .footer-icons,
@@ -20,13 +20,13 @@
     max-width: 70rem;
     margin: 0 auto;
     padding: 2rem 0;
-    --icon:var(--gray);
+    --icon:var(--white);
 }
 .footer-description{
     width: 100%;
 }
 .footer-icon:hover{
-    --icon:var(--white);
+    --icon:var(--gray);
 }
 .footer-icon{
     width: 2rem;
@@ -50,6 +50,6 @@
     font-weight: 600;
 }
 hr{
-    background: var(--gray);
-    border: .05rem solid var(--gray);
+    background: var(--white);
+    border: .05rem solid var(--white);
 }

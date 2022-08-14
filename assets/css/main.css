@@ -19,6 +19,7 @@ html{
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body{
     background: var(--gray);
@@ -38,11 +39,11 @@ h1,h2,h3{
 h1{
     color: var(--white-light);
     line-height: 3rem;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
 }
 h2{
     color: var(--gray);
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 h3{
     font-size: 1.5rem;
@@ -55,4 +56,11 @@ a{
 }
 ul{
     list-style: none;
+}
+@media only screen and (min-width:67rem){
+    h1{
+        font-size: 2.8rem;
+    }h2{
+        font-size: 2.2rem;
+    }
 }
