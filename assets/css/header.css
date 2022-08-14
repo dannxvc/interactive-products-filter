@@ -4,7 +4,7 @@
 .header-container{
     display: grid;
     grid-template-columns: 1fr;
-    height: 70vh;
+    min-height: 70vh;
     gap: 3rem;
     align-items: center;
     text-align: center;
@@ -13,6 +13,7 @@
     max-width: 70rem;
     margin: 0 auto;
     z-index: 2;
+    padding-top: 6rem;
 }
 .title-keyword{
     color: var(--primary);
@@ -68,8 +69,9 @@
 @media only screen and (min-width:67rem){
     .header-container{
         grid-template-columns: 1fr 1fr;
-        height: 100vh;
+        min-height: 100vh;
         text-align: left;
+        padding-top: 0;
         justify-items: left;
     }
     .header-img-container{
