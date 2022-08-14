@@ -42,14 +42,18 @@
 }
 .footer-attribution p{
     color: var(--white);
-    font-size: .8rem;
+    font-size: .7rem;
 }
 .footer-attribution a,
 .footer-owner{
     color: var(--white);
+    font-size: .7rem;
     font-weight: 600;
 }
 hr{
     background: var(--white);
     border: .05rem solid var(--white);
+}
+.footer-telf{
+    color: var(--white);
 }
