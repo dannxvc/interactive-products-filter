@@ -100,7 +100,8 @@
     margin: 0 auto;
     grid-column-start: 1;
     grid-column-end: 5;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding: 0 3rem;
 }
 .footer-wave{
     position: absolute;
@@ -116,6 +117,9 @@
     .products-types{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 1rem;
+    }
+    .products-empty{
+        font-size: 1.5rem;
     }
 }
 @media only screen and (min-width:67rem){

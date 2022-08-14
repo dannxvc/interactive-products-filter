@@ -9,14 +9,14 @@
     align-items: center;
     text-align: center;
     overflow: hidden;
-    width: 90%;
+    width: 85%;
     max-width: 70rem;
     margin: 0 auto;
     z-index: 2;
-    padding-top: 5rem;
+    padding-top: 8rem;
 }
 .logo-img{
-    height: 2.5rem;
+    height: 2rem;
     width: auto;
 }
 .title-keyword{
@@ -24,7 +24,7 @@
 }
 .header-description{
     display: grid;
-    gap: 1rem;    
+    gap: 1.5rem;    
     justify-items: center;
 }
 .header-img-container{
@@ -109,4 +109,12 @@
         justify-items: left;
         gap: 2rem;    
     }
+    .header-img{
+    width: 90%;
+    }
+    .logo-img{
+        height: 2.5rem;
+        width: auto;
+    }
+
 }
