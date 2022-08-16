@@ -1,6 +1,11 @@
 #header{
     position: relative;
 }
+.logo-container,
+.header-wpp-btn{
+    align-items: center;
+    display: flex;
+}
 .header-container{
     display: grid;
     grid-template-columns: 1fr;
@@ -18,6 +23,14 @@
 .logo-img{
     height: 2rem;
     width: auto;
+    margin-right: 0.5rem;
+}
+.logo-title{
+    font-size: 1.5rem;
+    color: var(--white);
+}
+.circle{
+    border-radius: 50%;
 }
 .title-keyword{
     color: var(--primary);
@@ -40,8 +53,6 @@
 .header-wpp-btn{
     padding: 0.4rem .9rem;
     color: var(--white);
-    display: flex;
-    align-items: center;
     gap: 1rem;
     border: var(--primary-light) 0.05rem solid;
     background: var(--primary-light);

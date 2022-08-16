@@ -1,5 +1,5 @@
 #navbar{
-    background: var(--gray);
+    background: var(--gray-transparent);
     position: fixed;
     z-index: 2;
     width: 100%;
@@ -7,6 +7,7 @@
     justify-content: space-between;
     padding: 1rem 2rem;
     align-items: center;
+    backdrop-filter: blur(1rem);
 }
 #navbar-links{
     display: none;

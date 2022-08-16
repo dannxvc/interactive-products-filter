@@ -5,7 +5,7 @@
     --primary-light:#49b7be;
     --gray-light:#1f2027;
     --gray:#070a0e;
-    /* --gray:#050b1f; */
+    --gray-transparent:rgba(7, 10, 14,0.35);
     --gray-blue:#A8B6C7;
     --blue-light:#d8dcf1;
     --white:#faf6f1;
